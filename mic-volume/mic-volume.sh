@@ -36,16 +36,16 @@ case $1 in
 		;;
 	"inc-vol")
 		if [ -z "$2" ]; then
-			pactl set-source-volume $DEFAULT_SOURCE +7%
+			pactl set-source-volume $DEFAULT_SOURCE +5%
 		else
-			pactl set-source-volume $2 +7%
+			pactl set-source-volume $2 +5%
 		fi
 		;;
 	"dec-vol")
 		if [ -z "$2" ]; then
-			pactl set-source-volume $DEFAULT_SOURCE -7%
+			pactl set-source-volume $DEFAULT_SOURCE -5%
 		else
-			pactl set-source-volume $2 -7%
+			pactl set-source-volume $2 -5%
 		fi
 		;;
 	"mute-vol")
